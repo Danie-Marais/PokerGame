@@ -95,8 +95,32 @@ class pokerhands {
         }
         if (this.isStraightFlush) {
             return 2;
+        }    
+        if (this.isFourOfAKind) {
+            return 3;            
+        }  
+        if (this.isFullHouse) {
+            return 4;
+        }  
+        if (this.isFlush) {
+            return 5;
+        }
+        if (this.isStraight) {
+            return 6;
+        }
+        if (this.isThreeOfAKind) {
+            return 7;            
+        }
+        if (this.isTwoPair) {
+            return 8;            
+        }
+        if (this.isOnePair) {
+            return 9;
+        }
+        if (this.isHighCard) {
+            return 10;
         }        
-        return 0;
+        return 99;
               
     }
 
@@ -124,7 +148,12 @@ class pokerhands {
 
     isFourOfAKind(numberCount) {
         let lReturn = false;
-            // To do
+        for (let i=0; i<numberCount.length; i++ ) {
+            if ((numbercount[i]==4)||(numberCount[i]==3 && this.hasWildCard)) {
+                this.number = i;
+                lReturn = true;
+            }
+        }
         return lReturn;
 
     }
