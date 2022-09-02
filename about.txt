@@ -1,0 +1,20 @@
+POKER GAME
+For this program, you will be taking a text input of playing cards and evaluating the best
+poker hand that could be constructed with the cards.
+For example, given a string input of:
+'AS, 10C, 10H, 3D, 3S'
+(the cards above are ace of spades, 10 of clubs, 10 of hearts, 3 of diamonds and 3 of spades)
+Output would be: 'Two Pair'
+Use whatever language you are most comfortable in, preferably Python/PHP if you are
+familiar with it.
+We are looking for evidence of good:
+- Object Oriented programming
+- Design Principles
+- Separation Of Concerns
+- Testing Methodologies
+rather than language skills.
+The objective is not to implement everything, but we are interested in seeing how you
+prioritize features. For us to see that progress, please provide a git commit history. We also
+recommend using API to determine the strength of a particular hand.
+For reference, the ten possible poker hands can be found at:
+https://en.wikipedia.org/wiki/List_of_poker_hand_categories 
